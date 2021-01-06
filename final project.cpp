@@ -18,6 +18,9 @@ class contact{
 		contact *next;
 		contact(){
 		};
+// In other meanings, it has been used to separate parameters of the
+// functions and features existing within the class, making you capable
+// of using the same names of the parameters and features
 		contact(string name, string family, string phone, string address, string email){
 			this -> name = name ; this -> phone = phone; this -> family = family ; this -> address = address ; this -> email = email ; next = NULL;
 		}
@@ -65,6 +68,9 @@ contactsList::contactsList(){
 // the defined member belongs to the class
 	head = NULL ; last = NULL; size = 0;
 }
+//In the representation of the linked lists by the cursor to the first
+// node in the linked list, the first node is called the header, and
+// when the list is empty, the header value is NULL.
 void contactsList::addBegin(string name, string family, string phone, string address, string email){
 // function that adds new contacts
 	contact* new_contact = new contact(name , family , phone , address , email);
